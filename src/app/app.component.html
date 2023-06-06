@@ -1,0 +1,68 @@
+<div class="container" fxLayoutAlign="space-around center">
+
+    <div class="child-1" fxLayout="row" fxLayout.lt-md="column" fxFlex.lt-md="100%">
+
+        <div class="child-2" fxLayout="column" fxFlex="50%" fxFlexOrder="1" fxFlexOrder.lt-md="2">
+
+            <img src="https://www.bing.com/images/blob?bcid=S6AmvLyTdFYFPA" alt="">
+
+            <h1 fxFlexAlign.lt-md="center">Let us help you run your freelance business</h1>
+
+            <p id="p1" fxFlexAlign.lt-md="center">Our registration process is quick and easy, taking no more than 10
+                minutes to complete</p>
+
+            <div class="child-4">
+
+                <div class="child-5">
+                    <div class="child-10"><img src="./assets/quotes.png" alt=""></div>
+
+                    <p>I'm impressed with the results I've seen since starting to use this product, I begin receiving
+                        clients and projects in the first week.</p>
+
+                    <div class="child-7" fxLayout="row">
+                        <img src="https://i.pinimg.com/originals/77/cf/4c/77cf4cb34a3238529885382867424ab3.jpg" title="Black Crown" alt=""
+                            >
+                        <p id="para">King Crown<span>Product Designer</span></p>
+                    </div>
+
+                </div>
+
+                <div class="child-6" fxLayout="row" fxLayoutAlign="center end">
+                    <div class="circle" id="circle-1"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="child-3" fxLayout="column" fxFlex="50%" fxFlexOrder="2" fxFlexOrder.lt-md="1">
+
+            <h2 fxFlexAlign.lt-md="center">Get started</h2>
+            <p fxFlexAlign.lt-md="center">Create your account now</p>
+
+            <mat-label>Full name</mat-label>
+            <mat-form-field appearance="outline">
+                <input matInput value=" " [(ngModel)]="SignUp.Name" placeholder="Maha Rajan">
+            </mat-form-field>
+
+            <mat-label>Email</mat-label>
+            <mat-form-field appearance="outline">
+                <input matInput value=" " [(ngModel)]="SignUp.Email" placeholder="Raja@example.com">
+            </mat-form-field>
+
+            <div class="child-11" fxLayout="row" fxLayoutAlign="space-between center">
+                <mat-label>Password</mat-label>
+                <p class="{{theam}}">{{status}}!</p>
+            </div>
+
+            <mat-form-field appearance="outline">
+                <input matInput type='password' id="pass" [(ngModel)]="pass" [(ngModel)]="SignUp.Password" value="{{pass}}">
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" (click)="register()">Sign Up</button>
+            <span fxLayoutAlign="center end">Have an account?<a href="">Login</a></span>
+        </div>
+    </div>
+</div>
+
